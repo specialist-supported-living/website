@@ -14,14 +14,12 @@
     <title>Specialist Supported Living Limited</title>
     <style>
       body {
-        background-color: #101010;
+        background-color: #ebebeb;
 	font-family: 'Lato', sans-serif;
       }
 
       .contact-card {
-        margin: 200px auto;
         background-color: #ebebeb;
-        width: 700px;
       }
 
       .contact-card__title {
@@ -29,37 +27,67 @@
         color: #B9DFE7;
         padding: 24px;
         font-size: 2em;
+        line-height: 1.4em;
       }
 
       .contact-card__logo {
-        width: 250px;
-        margin: 12px;
-	float: left;
+        width: 100%;
       }
 
       .contact-card__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 206px;
-        margin-top: 30px;
-        padding-bottom: 30px;
+        margin-top: -24px;
+        padding: 24px;
       }
 
       .contact-card__label {
         font-size: 1.4em;
+        line-height: 1.6em;
         color: #2EA1B7;
+      }
+
+      .contact-card__subtitle {
+        font-size: 1.5em;
+        line-height: 1.7em;
+        color: #2EA1B7;
+        font-weight: bold;
+      }
+
+      @media (min-width: 700px) {
+        body {
+          background-color: #101010;
+        }
+
+        .contact-card {
+          margin: 200px auto;
+          width: 700px;
+        }
+
+       .contact-card__logo {
+          width: 250px;
+          margin: 12px;
+          float: left;
+        }
+
+        .contact-card__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 206px;
+          margin-top: 30px;
+          padding: 0;
+          padding-bottom: 30px;
+        }
       }
 
     </style>
   </head>
   <body>
     <main class="contact-card">
-      <h1 class="contact-card__title">Specialist Supported Living Limited</h1>
+      <h1 class="contact-card__title">Currently Under Construction</h1>
       <img src="images/logo.svg" class="contact-card__logo"/>
       <div class="contact-card__content">
+        <p class="contact-card__subtitle">Contact Details</b></p>
         <p class="contact-card__label contact-card__label--name">Chris Musson</p>
-        <p class="contact-card__label contact-card__label--position">Chief Business Development Officer</p>
         <p class="contact-card__label contact-card__label--email">chris@specialistsupportedliving.co.uk</p>
         <p class="contact-card__label contact-card__label--tel">07515473905</p>
       </div>
